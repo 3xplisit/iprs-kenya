@@ -78,16 +78,12 @@ With this information at hand, you can now parse the details using PHP SimpleXML
     $element->registerXPathNamespace('i', 'http://www.w3.org/2001/XMLSchema-instance');
     $errorcode = $element->xpath('//a:ErrorCode');
     $error_res = $element->xpath('//a:ErrorMessage');
-</code>
-
-Then you can Parse the results and capture the individual elements with this functions
-
-<code>
-        $firstname   = $element->xpath('//a:First_Name');
-        $other_Name  = $element->xpath('//a:Other_Name');
-        $surname     = $element->xpath('//a:Surname');
-        $gender      = $element->xpath('//a:Gender');
-        $birthdate   = $element->xpath('//a:Date_of_Birth');
-        $deathdate   = $element->xpath('//a:Date_of_Death');
+    
+     $firstname   = $element->xpath('//a:First_Name');
+     $other_Name  = $element->xpath('//a:Other_Name');
+       $surname     = $element->xpath('//a:Surname');
+       $gender      = $element->xpath('//a:Gender');
+       $birthdate   = $element->xpath('//a:Date_of_Birth');
+       $deathdate   = $element->xpath('//a:Date_of_Death');
 </code>
 
