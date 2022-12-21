@@ -1,11 +1,12 @@
 # IPRS - Kenya API SDK (PHP)
 
-Support and Maintenance Queries: jessy3g@gmail.com
+Support and Maintenance Queries: jesse.kariuki@softwareske.com
 #
 This Project offers sample codes to be used when querying the IPRS API Service 
 you need to be onboarded on their VPN Service for you to use the API
+You can reach Out on how to setup this VPN on Unix based Systems to establish connectivity with the IPRS Kenya by sending me an email in the above mail.
 
-
+# Requirements for Go Live
 1. You will need the Username and Password obtained from the API Administrators
 2. You will need knowledge on SoapUI usage for generating the XML Requests to Submit to the API Endpoint
 # Generating the Request payload to IPRS VPN WebService
