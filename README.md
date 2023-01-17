@@ -31,7 +31,7 @@ $request = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/env
 </soapenv:Envelope>';
 
 //Create an instance of the SoapClient class to pass the Request 
-$soapClient      = new MySoapClient("http://10.1.1.5:9004/IPRSServerwcf?wsdl", $soap_params);
+$soapClient      = new MySoapClient("< WSDL_URL >", $soap_params);
 $PostTransaction = $soapClient->GetDataByIdCard($request,'http://tempuri.org/IServiceIPRS/GetDataByIdCard');
 ```
 Sample XML Returned from the Web Service call
@@ -73,21 +73,4 @@ This is how
 
 </xml>
 ```
-With this information at hand, you can now parse the details using PHP SimpleXML Function
-<code>
-  
-    $element = simplexml_load_string($PostTransaction);
-    $element->registerXPathNamespace('a', 'http://schemas.datacontract.org/2004/07/IPRSManager');
-    $element->registerXPathNamespace('s', 'http://schemas.xmlsoap.org/soap/envelope/');
-    $element->registerXPathNamespace('i', 'http://www.w3.org/2001/XMLSchema-instance');
-    $errorcode = $element->xpath('//a:ErrorCode');
-    $error_res = $element->xpath('//a:ErrorMessage');
-    
-     $firstname   = $element->xpath('//a:First_Name');
-     $other_Name  = $element->xpath('//a:Other_Name');
-       $surname     = $element->xpath('//a:Surname');
-       $gender      = $element->xpath('//a:Gender');
-       $birthdate   = $element->xpath('//a:Date_of_Birth');
-       $deathdate   = $element->xpath('//a:Date_of_Death');
-</code>
 
