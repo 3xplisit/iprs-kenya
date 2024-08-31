@@ -1,7 +1,8 @@
 # IPRS - Kenya API SDK (PHP)
 
-Support and Maintenance Queries: jesse.kariuki@softwareske.com
-#
+For Support and VPN Setup Queries: jesse.kariuki@softwareske.com
+
+I also Offer paid VPN Configuration assistance for clients who wish to get past the setup stage quickly.#
 This Project offers sample codes to be used when querying the IPRS API Service 
 you need to be onboarded on their VPN Service for you to use the API
 You can reach Out on how to setup this VPN on Unix based Systems to establish connectivity with the IPRS Kenya by sending me an email in the above mail.
